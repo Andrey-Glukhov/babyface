@@ -54,3 +54,13 @@ function ready() {
 }
 
 document.addEventListener("DOMContentLoaded", ready);
+
+function getXPosition() { //Получить случайные координаты x окна браузера.
+    var x_position = Math.floor(Math.random() * $(window).width());
+    return x_position;
+}
+
+function getYPositionOfElement() { //Получить случайные координаты y окна браузера.
+    var y_position = Math.floor(Math.random() * $(window).height());
+    return y_position;
+}
