@@ -1,0 +1,51 @@
+body,
+html {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+}
+
+/*--------------------------------------------------------------
+fonts
+--------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'Karrik-Italic';
+  src: url(../Karrik-Italic.woff) format("woff");
+}
+@font-face {
+  font-family: 'Karrik-Regular';
+  src: url(../Karrik-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: 'Karrik-Italic';
+  src: url(../Karrik-Italic.woff2) format("woff2");
+}
+@font-face {
+  font-family: 'Karrik-Regular';
+  src: url(../Karrik-Regular.woff2) format("woff2");
+}
+
+/*--------------------------------------------------------------
+placeholder
+--------------------------------------------------------------*/
+.baby_logo>img{
+  width: 100%;
+}
+.placeholder_background{
+  background-color: #111115;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+.baby_intro{
+  font-family: 'Karrik-Regular';
+  font-size: 1.2rem;
+  font-style: normal;
+  color: #ffffff;
+}
