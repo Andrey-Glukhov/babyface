@@ -1,0 +1,12 @@
+.template {
+    width: 90vw;
+    height: 90vh;
+}
+
+.textblock {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+    height: 30vh;
+    background-color: #a11aff;
+}
