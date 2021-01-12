@@ -121,6 +121,7 @@ function ready() {
         $("#accordion li").click(function() {
             if (activeItem == this) {
                 $(activeItem).animate({ width: "50px" }, { duration: 300, queue: false });
+                activeItem = '';
                 return;
             }
             $(activeItem).animate({ width: "50px" }, { duration: 300, queue: false });
