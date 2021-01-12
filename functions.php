@@ -1,7 +1,8 @@
 <?php
 function babyface_script_enqueue(){
 //css
-	wp_enqueue_style( 'babyface-stylesheet', get_template_directory_uri() . '/css/babyface.css', array(), '1.0.0', 'all' );
+  wp_enqueue_style( 'babyface-stylesheet', get_template_directory_uri() . '/css/babyface.css', array(), '1.0.0', 'all' );
+  //wp_enqueue_style( 'jinvertscroll-stylesheet', get_template_directory_uri() . '/css/jInvertScroll.css', array(), '1.0.0', 'all' );
   //js
   // unregister jQuery
   wp_deregister_script('jquery-core');
@@ -21,7 +22,7 @@ function babyface_script_enqueue(){
   // GSAP
   wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.0/gsap.min.js', array('jquery'), null, true );
   wp_enqueue_script( 'gsap-animation-js', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js', array('jquery', 'gsap-js'), null, true );
-
+ // wp_enqueue_script( 'jquery.jInvertScroll.min-js', get_template_directory_uri() . '/js/jquery.jInvertScroll.min.js', array('jquery'), null, true );
   wp_enqueue_script( 'babyface-js', get_template_directory_uri() . '/js/babyface.js', array('jquery', 'scroll-magic-js', 'gsap-js', 'bootstrap-js'), null, true );
 
 }
