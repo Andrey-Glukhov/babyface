@@ -142,3 +142,168 @@ single-artists
 .wp-block-group__inner-container {
     height: 100vh;
 }
+
+.starter>.wp-block-group__inner-container>figure.wp-block-embed>.wp-block-embed__wrapper>iframe{
+  width: 100vw;
+  height: 100vh;
+}
+
+/*--------------------------------------------------------------
+artists layouts
+--------------------------------------------------------------*/
+
+.zea_col_top>figure>img{
+  height: 70vh;
+  width: auto;
+}
+.zea_col_bottom>figure>img{
+  height: 70vh;
+  width: auto;
+}
+.zea_col_top>figure{
+  display: flex;
+  justify-content: center;
+  margin-top: 7vh;
+}
+.zea_col_bottom>figure{
+  display: flex;
+  justify-content: center;
+}
+.zea_col_bottom{
+align-items: flex-end;
+display: flex;
+justify-content: center;
+margin-bottom: 7vh;
+}
+.zea_col_top>p{
+  font-style: italic;
+  font-family: Cormorant Garamond;
+  font-style: italic;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  width: 50%;
+}
+.zeo_halfs>figure{
+  height: 50vh;
+  display: flex;
+  justify-content: flex-end;
+}
+.zeo_halfs>figure>img{
+  height: 80%;
+  width: auto;
+}
+.zeo_center.small>figure>img{
+  height: 45vh;
+  width: auto;
+}
+.zeo_center.big>figure>img{
+  height: 65vh;
+  width: auto;
+}
+.zeo_center.hor>figure>img{
+  height: auto;
+  width: 80%;
+}
+.zeo_center.hor>figure{
+  margin-top: 7vh;
+}
+.zeo_center.hor{
+  display: block !important;
+}
+.zeo_center{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zeo_center>p{
+  font-style: italic;
+  font-family: Cormorant Garamond;
+  font-style: italic;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  width: 50%;
+}
+.complex>.wp-block-group__inner-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.complex>.wp-block-group__inner-container>.wp-block-columns>.wp-block-column>figure>.wp-block-embed__wrapper>iframe{
+  width: 100%;
+  height: 60vh;
+}
+.complex>div>h2{
+  margin-left: 50px;
+    margin-bottom: 50px;
+    font-size: 2.4rem;
+}
+
+.fullscreen>div>iframe{
+  width: 100vw;
+  height: 100vh;
+}
+.black{
+  background-color: #000000;
+}
+.beige{
+    background-color: #f1e9e3;
+}
+.overflow>.wp-block-group__inner-container{
+  width: 60vw;
+  overflow-y: scroll;
+}
+.img_fullheight>.wp-block-group__inner-container>figure{
+  height: 100%;
+
+}
+.img_fullheight>.wp-block-group__inner-container>figure>img{
+  height: 100%;
+  width: auto;
+}
+
+.title>.wp-block-group__inner-container{
+  width: 100%;
+}
+.viivi_pink{
+  background-color: #ec008c;
+}
+.title>.wp-block-group__inner-container>.wp-block-columns{
+  height: 100vh;
+}
+.title>.wp-block-group__inner-container>.wp-block-columns>.wp-block-column{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title>.wp-block-group__inner-container>.wp-block-columns>.wp-block-column>h2{
+padding: 15px 0 15px 25px;
+}
+.title>.wp-block-group__inner-container>.wp-block-columns>.wp-block-column>p{
+padding: 15px 0 15px 25px;
+}
+.amfo-portraits>.wp-block-group__inner-container>figure>img{
+  width: 100%;
+  height: auto;
+}
+.slide.kurz{
+  width: 25vw !important;
+}
+.kurz>.wp-block-group__inner-container{
+  display: flex;
+  align-items: center;
+}
+.kurz>.wp-block-group__inner-container>p{
+  padding-right: 20px;
+    font-size: 1.2rem;
+}
+
+.v_center>.wp-block-group__inner-container>figure>.wp-block-embed__wrapper>iframe{
+  width: 76vw;
+  height: 85vh;
+}
+.v_center>.wp-block-group__inner-container{
+  display: flex;
+  align-items: center;
+}
