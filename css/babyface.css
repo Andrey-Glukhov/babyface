@@ -57,3 +57,14 @@ placeholder
     font-style: normal;
     color: #ffffff;
 }
+
+
+/* Tooltip */
+
+.tooltip>.tooltip-inner {
+    background-color: #73AD21;
+    color: #6e1f1f;
+    border: 1px solid green;
+    padding: 15px;
+    font-size: 20px;
+}
