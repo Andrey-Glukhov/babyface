@@ -97,3 +97,48 @@ placeholder
 .baby_intro {
     margin-bottom: 20px
 }
+
+
+/*--------------------------------------------------------------
+single-artists
+--------------------------------------------------------------*/
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: auto;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.about_wrapper>.slide {
+    font-family: 'Connary-Fagen-Visby-CF-Bold';
+    font-size: 1.2rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #015556;
+}
+
+.wp-block-group__inner-container {
+    height: 100vh;
+}
