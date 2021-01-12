@@ -17,22 +17,22 @@ fonts
 
 @font-face {
     font-family: 'Karrik-Italic';
-    src: url(../Karrik-Italic.woff) format("woff");
+    src: url(./Karrik-Italic.woff) format("woff");
 }
 
 @font-face {
     font-family: 'Karrik-Regular';
-    src: url(../Karrik-Regular.woff) format("woff");
+    src: url(./Karrik-Regular.woff) format("woff");
 }
 
 @font-face {
-    font-family: 'Karrik-Italic';
-    src: url(../Karrik-Italic.woff2) format("woff2");
+    font-family: 'Karrik-Italic_2';
+    src: url(./Karrik-Italic_2.woff2) format("woff2");
 }
 
 @font-face {
-    font-family: 'Karrik-Regular';
-    src: url(../Karrik-Regular.woff2) format("woff2");
+    font-family: 'Karrik-Regular_2';
+    src: url(./Karrik-Regular_2.woff2) format("woff2");
 }
 
 
@@ -40,7 +40,12 @@ fonts
 placeholder
 --------------------------------------------------------------*/
 
-.baby_logo>img {
+.baby_logo {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.baby_logo>a>img {
     width: 100%;
 }
 
@@ -49,13 +54,6 @@ placeholder
     width: 100%;
     min-height: 100vh;
     height: 100%;
-}
-
-.baby_intro {
-    font-family: 'Karrik-Regular';
-    font-size: 1.2rem;
-    font-style: normal;
-    color: #ffffff;
 }
 
 
@@ -67,4 +65,35 @@ placeholder
     border: 1px solid green;
     padding: 15px;
     font-size: 20px;
+}
+
+.baby_intro>h1 {
+    /* font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 600; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-style: normal;
+    color: #a3d8a5;
+    text-align: center;
+}
+
+.baby_intro>p {
+    /* font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 300; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    font-style: normal;
+    color: #417d79;
+    text-align: center;
+}
+
+.baby_intro>p>a {
+    color: #417d79;
+    text-decoration: underline;
+}
+
+.baby_intro {
+    margin-bottom: 20px
 }
