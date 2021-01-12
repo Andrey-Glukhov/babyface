@@ -5,29 +5,29 @@
         margin: 0;
         padding: 0;
     }
-    
+
     * {
         margin: 0;
     }
     /*--------------------------------------------------------------
 fonts
 --------------------------------------------------------------*/
-    
+
     @font-face {
         font-family: 'Karrik-Italic';
         src: url(./Karrik-Italic.woff) format("woff");
     }
-    
+
     @font-face {
         font-family: 'Karrik-Regular';
         src: url(./Karrik-Regular.woff) format("woff");
     }
-    
+
     @font-face {
         font-family: 'Karrik-Italic_2';
         src: url(./Karrik-Italic_2.woff2) format("woff2");
     }
-    
+
     @font-face {
         font-family: 'Karrik-Regular_2';
         src: url(./Karrik-Regular_2.woff2) format("woff2");
@@ -35,16 +35,16 @@ fonts
     /*--------------------------------------------------------------
 placeholder
 --------------------------------------------------------------*/
-    
+
     .baby_logo {
         margin-top: 60px;
         margin-bottom: 30px;
     }
-    
+
     .baby_logo>a>img {
         width: 100%;
     }
-    
+
     .placeholder_background {
         background-color: #111115;
         width: 100%;
@@ -52,7 +52,7 @@ placeholder
         height: 100%;
     }
     /* Tooltip */
-    
+
     .tooltip>.tooltip-inner {
         background-color: #73AD21;
         color: #6e1f1f;
@@ -60,7 +60,7 @@ placeholder
         padding: 15px;
         font-size: 20px;
     }
-    
+
     .baby_intro>h1 {
         /* font-family: 'Darker Grotesque', sans-serif;
     font-weight: 600; */
@@ -71,7 +71,7 @@ placeholder
         color: #a3d8a5;
         text-align: center;
     }
-    
+
     .baby_intro>p {
         /* font-family: 'Darker Grotesque', sans-serif;
     font-weight: 300; */
@@ -82,62 +82,69 @@ placeholder
         color: #417d79;
         text-align: center;
     }
-    
+
     .baby_intro>p>a {
         color: #417d79;
         text-decoration: underline;
     }
-    
+
     .baby_intro {
         margin-bottom: 20px
     }
     /*--------------------------------------------------------------
 single-artists
 --------------------------------------------------------------*/
-    
-    .wrapper {
-        display: flex;
-        flex-direction: row;
-        width: fit-content;
-        transform: rotate(90deg) translateY(-100vh);
-        transform-origin: top left;
-    }
-    
-    .outer-wrapper {
-        width: 100vh;
-        height: 100vw;
-        transform: rotate(-90deg) translateX(-100vh);
-        transform-origin: top left;
-        overflow-y: scroll;
-        overflow-x: auto;
-        position: absolute;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-    }
-    
-     ::-webkit-scrollbar {
-        display: none;
-    }
-    
-    .about_wrapper>.slide {
-        font-family: 'Connary-Fagen-Visby-CF-Bold';
-        font-size: 1.2rem;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        color: #015556;
-    }
-    
-    .wp-block-group__inner-container {
-        height: 100vh;
-    }
-    /*--------------------------------------------------------------
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: auto;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.about_wrapper>.slide {
+    font-family: 'Connary-Fagen-Visby-CF-Bold';
+    font-size: 1.2rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #015556;
+}
+
+.wp-block-group__inner-container {
+    height: 100vh;
+}
+
+.starter>.wp-block-group__inner-container>figure.wp-block-embed>.wp-block-embed__wrapper>iframe{
+  width: 100vw;
+  height: 100vh;
+}
+
+/*--------------------------------------------------------------
 guide
 --------------------------------------------------------------*/
-    
+
     #accordion {
         list-style: none;
         /* margin: 30px 0; */
@@ -148,7 +155,7 @@ guide
         background: #7d8d96;
         width: 2080px;
     }
-    
+
     #accordion li {
         float: left;
         display: block;
@@ -160,7 +167,7 @@ guide
         text-decoration: none;
         border-left: 1px solid #fff;
     }
-    
+
     #accordion li .acc_header {
         height: 40px;
         width: 50vh;
@@ -175,7 +182,7 @@ guide
         float: left;
         cursor: pointer;
     }
-    
+
     #accordion li .acc_content {
         height: 100vh;
         margin-left: 50px;
@@ -183,7 +190,7 @@ guide
         float: left;
         overflow: hidden;
     }
-    
+
     #accordion li .acc_content img {
         border: none;
         border-right: 1px solid #fff;
@@ -194,7 +201,7 @@ guide
     /* #accordion li.active {
         width: 450px;
     } */
-    
+
     #accordion li .acc_content a {
         position: absolute;
         top: 0;
@@ -203,3 +210,163 @@ guide
         height: 30px;
         background-color: aqua;
     }
+
+/*--------------------------------------------------------------
+artists layouts
+--------------------------------------------------------------*/
+
+.zea_col_top>figure>img{
+  height: 70vh;
+  width: auto;
+}
+.zea_col_bottom>figure>img{
+  height: 70vh;
+  width: auto;
+}
+.zea_col_top>figure{
+  display: flex;
+  justify-content: center;
+  margin-top: 7vh;
+}
+.zea_col_bottom>figure{
+  display: flex;
+  justify-content: center;
+}
+.zea_col_bottom{
+align-items: flex-end;
+display: flex;
+justify-content: center;
+margin-bottom: 7vh;
+}
+.zea_col_top>p{
+  font-style: italic;
+  font-family: Cormorant Garamond;
+  font-style: italic;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  width: 50%;
+}
+.zeo_halfs>figure{
+  height: 50vh;
+  display: flex;
+  justify-content: flex-end;
+}
+.zeo_halfs>figure>img{
+  height: 80%;
+  width: auto;
+}
+.zeo_center.small>figure>img{
+  height: 45vh;
+  width: auto;
+}
+.zeo_center.big>figure>img{
+  height: 65vh;
+  width: auto;
+}
+.zeo_center.hor>figure>img{
+  height: auto;
+  width: 80%;
+}
+.zeo_center.hor>figure{
+  margin-top: 7vh;
+}
+.zeo_center.hor{
+  display: block !important;
+}
+.zeo_center{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zeo_center>p{
+  font-style: italic;
+  font-family: Cormorant Garamond;
+  font-style: italic;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  width: 50%;
+}
+.complex>.wp-block-group__inner-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.complex>.wp-block-group__inner-container>.wp-block-columns>.wp-block-column>figure>.wp-block-embed__wrapper>iframe{
+  width: 100%;
+  height: 60vh;
+}
+.complex>div>h2{
+  margin-left: 50px;
+    margin-bottom: 50px;
+    font-size: 2.4rem;
+}
+
+.fullscreen>div>iframe{
+  width: 100vw;
+  height: 100vh;
+}
+.black{
+  background-color: #000000;
+}
+.beige{
+    background-color: #f1e9e3;
+}
+.overflow>.wp-block-group__inner-container{
+  width: 60vw;
+  overflow-y: scroll;
+}
+.img_fullheight>.wp-block-group__inner-container>figure{
+  height: 100%;
+
+}
+.img_fullheight>.wp-block-group__inner-container>figure>img{
+  height: 100%;
+  width: auto;
+}
+
+.title>.wp-block-group__inner-container{
+  width: 100%;
+}
+.viivi_pink{
+  background-color: #ec008c;
+}
+.title>.wp-block-group__inner-container>.wp-block-columns{
+  height: 100vh;
+}
+.title>.wp-block-group__inner-container>.wp-block-columns>.wp-block-column{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title>.wp-block-group__inner-container>.wp-block-columns>.wp-block-column>h2{
+padding: 15px 0 15px 25px;
+}
+.title>.wp-block-group__inner-container>.wp-block-columns>.wp-block-column>p{
+padding: 15px 0 15px 25px;
+}
+.amfo-portraits>.wp-block-group__inner-container>figure>img{
+  width: 100%;
+  height: auto;
+}
+.slide.kurz{
+  width: 25vw !important;
+}
+.kurz>.wp-block-group__inner-container{
+  display: flex;
+  align-items: center;
+}
+.kurz>.wp-block-group__inner-container>p{
+  padding-right: 20px;
+    font-size: 1.2rem;
+}
+
+.v_center>.wp-block-group__inner-container>figure>.wp-block-embed__wrapper>iframe{
+  width: 76vw;
+  height: 85vh;
+}
+.v_center>.wp-block-group__inner-container{
+  display: flex;
+  align-items: center;
+}
