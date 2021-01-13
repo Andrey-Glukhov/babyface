@@ -116,7 +116,10 @@ function ready() {
         // });
 
         //controller = new ScrollMagic.Controller({ vertical: false });
-
+        $('html, body').mousewheel(function(e, delta) {
+            this.scrollLeft -= (delta * 40);
+            // e.preventDefault();
+        });
 
         $("#accordion li").click(function() {
             if (activeItem == this) {
