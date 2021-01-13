@@ -132,6 +132,22 @@ function ready() {
             activeItem = this;
         });
     }
+    if ($('.about_wrapper').length) {
+        var frm = document.getElementsByTagName('iframe')[1];
+        frm.onload = function() {
+            //var frm1 = document.getElementsByTagName('iframe')[1];
+            var otherdoc = frm.contentWindow.document;
+            var otherhead = otherdoc.getElementsByTagName("head")[0];
+            var link = otherdoc.createElement("link");
+            link.setAttribute("rel", "stylesheet");
+            link.setAttribute("type", "text/css");
+            link.setAttribute("href", "http://localhost:8888/babyface/wordpress/wp-content/themes/babyface/css/embed.css");
+            otherhead.appendChild(link);
+            // var iframeDoc2 = iframe.contentWindow.document;
+            // iframeDoc2.body.style.backgroundColor = 'orange';
+        }
+
+    }
 
     function getXPosition() {
         var x_position = Math.floor(Math.random() * (totalWidth - cellSize));

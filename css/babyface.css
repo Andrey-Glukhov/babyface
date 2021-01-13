@@ -1,7 +1,7 @@
     body,
     html {
         width: 100%;
-        height: auto;
+        height: 100%;
         margin: 0;
         padding: 0;
     }
@@ -150,8 +150,9 @@ guide
         height: 100vh;
         overflow-x: scroll;
         overflow-y: hidden;
-        background: #7d8d96;
+        background-color: #111115;
         width: 2080px;
+        scroll-behavior: smooth;
     }
     
     #accordion li {
@@ -168,15 +169,15 @@ guide
     }
     
     #accordion li .acc_header {
-        height: 40px;
+        height: 50px;
         width: 50vh;
-        padding: 15px 0;
+        padding: 8px 0;
         overflow: hidden;
-        color: #fff;
+        color: #a9cf38;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 1.5em;
-        transform: rotate(-90deg) translate(-100%);
+        transform: rotate(-90deg) translate(-180%, 20px);
         transform-origin: left;
         float: left;
         cursor: pointer;
@@ -195,7 +196,7 @@ guide
         border: none;
         border-right: 1px solid #fff;
         float: left;
-        margin: -15px 15px 0 0;
+        /* margin: -15px 15px 0 0; */
         overflow: hidden;
         height: 100vh;
     }

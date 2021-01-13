@@ -39,4 +39,11 @@ add_theme_support('custom-header');
 add_theme_support('post-formats', array('aside', 'chat', 'gallery','link','image','quote','status','video'));
 add_theme_support('post-thumbnails');
 
+function mycustom_embed_defaults($embed_size){
+  $embed_size['width'] = 620;
+  $embed_size['height'] = 360;
+  return $embed_size;
+  }
+  add_filter('embed_defaults', 'mycustom_embed_defaults');
+
 ?>
