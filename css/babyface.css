@@ -216,14 +216,14 @@ guide
         height: 100vh;
         width: 400px;
         margin-left: 50px;
-        float: left;
+        /* float: left; */
         overflow: hidden;
     }
     
     #accordion li .acc_content img {
         border: none;
         border-right: 1px solid #fff;
-        float: left;
+        /* float: left; */
         /* margin: -15px 15px 0 0; */
         overflow: hidden;
         height: 100vh;
