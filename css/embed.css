@@ -1,0 +1,4 @@
+.ytp-chrome-controls .ytp-youtube-button.ytp-button.yt-uix-sessionlink,
+.ytp-chrome-controls .ytp-chrome-top.ytp-show-cards-title {
+    display: none;
+}

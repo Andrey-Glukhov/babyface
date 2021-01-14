@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" >
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
   <meta name="keywords" content="babyface" />
   <meta name="description" content="babyface" />
 

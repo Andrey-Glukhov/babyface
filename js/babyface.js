@@ -86,8 +86,8 @@ function ready() {
 
             }
         }
-        console.log(cells.length);
-        console.log(cells);
+        // console.log(cells.length);
+        // console.log(cells);
         for (cellCount = 1; cellCount < cells.length; cellCount++) {
             var cellElement = document.createElement('div');
             cellElement.className = 'star_cell';
@@ -105,7 +105,8 @@ function ready() {
 
     }
     if (document.querySelector('#accordion')) {
-        var activeItem = $("#accordion li:first");
+        var activeItem;
+        //$("#accordion li:first")[0];
         //$(activeItem).addClass('active');
 
         //$.jInvertScroll(['#accordion']);
@@ -117,20 +118,44 @@ function ready() {
 
         //controller = new ScrollMagic.Controller({ vertical: false });
         $('html, body').mousewheel(function(e, delta) {
-            this.scrollLeft -= (delta * 40);
+            this.scrollLeft -= (delta * 25);
             // e.preventDefault();
         });
 
         $("#accordion li").click(function() {
             if (activeItem == this) {
+                var preWidth;
+                if (activeItem.clientWidth >= 400) {
+                    preWidth = $('#accordion').width();
+                }
                 $(activeItem).animate({ width: "50px" }, { duration: 300, queue: false });
                 activeItem = '';
+                if (preWidth) {
+                    $('#accordion').css('width', (preWidth - 400) + 'px');
+                }
                 return;
+            }
+            if ((activeItem && activeItem.clientWidth < 400) || !activeItem) {
+                var preWidth = $('#accordion').width();
+                $('#accordion').css('width', (preWidth + 400) + 'px');
             }
             $(activeItem).animate({ width: "50px" }, { duration: 300, queue: false });
             $(this).animate({ width: "450px" }, { duration: 300, queue: false });
             activeItem = this;
         });
+    }
+    if ($('.about_wrapper').length) {
+        // var frm = document.getElementsByTagName('iframe')[1];
+        // frm.onload = function() {
+        //     //var frm1 = document.getElementsByTagName('iframe')[1];
+        //     var otherdoc = frm.contentWindow.document;
+        //     var otherhead = otherdoc.getElementsByTagName("head")[0];
+        //     var link = otherdoc.createElement("link");
+        //     link.setAttribute("rel", "stylesheet");
+        //     link.setAttribute("type", "text/css");
+        //     link.setAttribute("href", "http://localhost:8888/babyface/wordpress/wp-content/themes/babyface/css/embed.css");
+        //     otherhead.appendChild(link);
+        // }
     }
 
     function getXPosition() {
